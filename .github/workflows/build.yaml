@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt-get install g++ g++-mingw-w64
-      - run: pwd
-      - run: ls
+      - uses: actions/checkout@v4
       - run: make build
       - run: make build-windows
