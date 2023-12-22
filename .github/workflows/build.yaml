@@ -7,5 +7,6 @@ jobs:
     steps:
       - run: sudo apt-get install g++ g++-mingw-w64
       - run: pwd
+      - run: ls
       - run: make build
       - run: make build-windows
